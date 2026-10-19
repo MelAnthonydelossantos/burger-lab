@@ -1,0 +1,213 @@
+.header {
+    align-items: center;
+    background: #e15ad8;
+    border-bottom: 1px solid #8d1392;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem clamp(1.25rem, 10vw, 8rem);
+}
+
+.main-subtitle {
+  color: #cf40dc;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Arial', Times, serif;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin-top: 17px;
+  margin-left: auto;
+  margin-right: auto;
+}s
+
+
+.brand {
+    align-items: center;
+    color: #a80a98;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 800;
+    gap: 0.45rem;
+    line-height: 0.85;
+    text-decoration: none;
+}
+
+.brand strong,
+.brand b {
+    display: block;
+}
+
+.brand b {
+    color: #d729d7;
+    font-size: 1.15rem;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
+.navigation a {
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+    color: #be24bb;
+}
+
+.cart-button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0;
+    position: relative;
+}
+
+.cart-count {
+    align-items: center;
+    background: #a93b93;
+    border-radius: 50%;
+    color: #d133c4;
+    display: flex;
+    font-size: 0.65rem;
+    height: 1rem;
+    justify-content: center;
+    position: absolute;
+    right: -0.55rem;
+    top: -0.45rem;
+    width: 1rem;
+}
+
+.burger-page {
+    font-family: 'Arial', Times, serif;
+    padding: 2rem;
+    background: #e9e7e9;
+    min-height: 100vh;
+}
+
+.burger-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: flex-end;
+    }
+
+    .main-nav a {
+        font-size: 0.7rem;
+    }
+}
+
+.burger-page h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #c93ebdfa;
+}
+
+.burger-page h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.burger-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+}
+
+.burger-card {
+    background: #e741e9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.burger-image {
+  width: 80%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+    
+}
+
+.burger-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.burger-info {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.rating-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+    width: 100%;                    
+    margin-bottom: 0.5rem; 
+}
+
+.burger-price {
+    color: #181818;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin-top: 0rem;
+}
+
+.burger-info {
+    display: flex;
+    flex-direction: column;
+}
+.burger-info h2 {
+    margin: 0.5rem;
+    color: #2d160d;
+    text-align: left;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.burger-info p {
+    font-size: 1rem;
+    color: #131313;
+    text-align: left;
+    line-height: 1.4;
+    margin: 0.5rem;
+    flex-grow: 1;
+    
+}
+
+.burger-meta {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    color: #9b2d2d;
+    margin-top: 1rem;
+}
